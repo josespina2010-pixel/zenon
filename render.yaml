@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: grimorio-carmesi-black-clover
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SQL_HOST
+        sync: false
+      - key: SQL_PORT
+        value: "6543"
+      - key: SQL_DB_NAME
+        value: postgres
+      - key: SQL_USER
+        sync: false
+      - key: SQL_PASSWORD
+        sync: false
+      - key: SQL_ADMIN_USER
+        sync: false
+      - key: SQL_ADMIN_PASSWORD
+        sync: false
+      - key: SQL_SSL
+        value: "true"
+      - key: ADMIN_EMAIL
+        sync: false

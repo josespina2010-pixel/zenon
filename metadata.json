@@ -1,0 +1,6 @@
+{
+  "name": "Grimorio Carmesí",
+  "description": "Tienda especializada de mangas de Black Clover en ediciones tankōbon y coleccionista con catálogo, carrito y pedidos en PostgreSQL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
